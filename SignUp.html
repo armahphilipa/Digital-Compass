@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>register</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/login.css" rel="stylesheet" />
+    <script src="main/login.js"></script>
+  </head>
+  <body>
+    <nav>
+      <span class="logo">Digital Compass</span>
+      <div class="centered-nav">
+        <a href="#">Explore</a>
+
+        <a href="#">Solutions</a>
+
+        <a href="#">Learn</a>
+      </div>
+
+      <div class="left-nav">
+        <a href="./login.html">Login</a>
+
+        <a href="#"><button>Sign Up</button></a>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="frame">
+        <div class="content">
+          <div class="header">
+            <h2>Sign up</h2>
+          </div>
+          <div class="login-form">
+            <form id="login">
+              <div class="field-input">
+                <label for="name">Name</label>
+                <input
+                  type="name"
+                  placeholder="Enter your name"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="field-input">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="field-input">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  placeholder="Create a password"
+                  id="password"
+                  name="password"
+                  required
+                />
+              </div>
+
+              <div class="row">
+                <div>
+                  <label for="checkbox">Must be at least 8 characters</label>
+                </div>
+              </div>
+              <div class="action">
+                <button type="submit" id="sign-in">
+                  <a href="register.html">Create account</a>
+                </button>
+                <button id="social-button" data-onsuccess="onGoogleSignIn">
+                  <div class="social-btn">
+                    <img src="./images/Social icon.png" alt="google icon" />Log
+                    in with Google
+                  </div>
+                </button>
+              </div>
+
+              <div class="row-2">
+                <a href="#">Already have an account?</a>
+                <button id="sign-up">Log in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="illustration">
+          <img src="/images/backgrnd-11.jpeg" alt="illustration" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; Dgital Compass 2024 | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <img src="images/bx-envelope.svg" alt="mail-icon" />
+        <a href="mailto:example@gmai.com">help@digitalcompass.com</a>
+      </div>
+    </footer>
+  </body>
+</html>
