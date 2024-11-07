@@ -233,3 +233,41 @@ input {
     padding-bottom: 1px;
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 100px 5%;
+  }
+  .frame {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav span {
+    font-size: 1rem;
+  }
+  .header h2 {
+    font-size: 24px;
+  }
+  input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  nav {
+    padding: 1rem 3%;
+  }
+  .hero-section {
+    padding: 100px 3%;
+  }
+  .header h2 {
+    font-size: 22px;
+  }
+  input {
+    font-size: 14px;
+  }
+  #sign-in {
+    font-size: 14px;
+  }
+}
