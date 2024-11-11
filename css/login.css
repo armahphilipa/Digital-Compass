@@ -10,7 +10,10 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
-    min-height: 100vh;
+}
+
+section{
+    min-height: 70vh;
 }
 
 
