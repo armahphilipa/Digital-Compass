@@ -10,7 +10,11 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
-    height: auto;
+  
+}
+
+section{
+      height: auto;
 }
 
 nav{
