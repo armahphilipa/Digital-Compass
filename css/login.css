@@ -10,12 +10,8 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
+    height: auto;
 }
-
-section{
-    height: full;
-}
-
 
 nav{
     position: fixed;
