@@ -60,7 +60,7 @@ nav button{
 }
 
 .hero-section{
-    background-image: url('/images/photo-1512295767273-ac109ac3acfa.jpeg');
+    background-image: url('images/photo-1512295767273-ac109ac3acfa.jpeg');
     background-repeat: no-repeat;
     object-fit: cover;
     padding: 120px 300px;
