@@ -253,178 +253,118 @@ nav .profile-details i{
   font-size: 20px;
   font-weight: 500;
 }
-.home-content .sales-boxes{
-  display: flex;
-  justify-content: space-between;
-  /* padding: 0 20px; */
-}
+/* Parent Container for Both Sections */
 .sales-boxes {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   gap: 20px;
+  justify-content: space-between;
   padding: 20px;
+  align-items: flex-start;
 }
 
+/* Recent Enrolled Courses Section */
 .recent-sales {
   flex: 1;
-  min-width: 60%;
-}
-
-.top-sales {
-  flex: 0 1 35%;
-  max-width: 35%;
   background: #fff;
-  padding: 20px 30px;
+  padding: 20px;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  max-width: 60%;
 }
 
-/* Container Styling */
-
-.recent-sales.box {
-  background: #f9f9f9;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.courses-details {
+  margin-top: 20px;
 }
 
-.title {
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Course Card Styling */
 .course-card {
-  background: #fff;
-  border-radius: 10px;
+  background: #f9f9f9;
   padding: 15px;
-  margin-bottom: 15px;
-  border: 1px solid #e0e0e0;
-}
-
-.course-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.facilitator-name {
-  font-size: 14px;
-  color: #555;
+  border-radius: 8px;
   margin-bottom: 10px;
 }
 
-/* Progress Bar Styling */
 .progress-container {
-  position: relative;
-  background: #e0e0e0;
-  border-radius: 10px;
-  height: 20px;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .progress-bar {
-  height: 100%;
-  background-color: #4caf50;
-  border-radius: 10px;
+  width: 70%;
+  height: 8px;
+  background: #4caf50;
+  border-radius: 4px;
 }
 
 .progress-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 12px;
-  color: #fff;
+}
+
+/* Recently Enrolled Webinars Section */
+.top-sales {
+  flex: 0 1 35%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  max-width: 35%;
+}
+
+.webinars-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.webinars-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.webinars-list img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.webinar-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.webinar-theme {
   font-weight: bold;
+}
+
+.program-name,
+.webinar-date-time {
+  font-size: 12px;
+  color: #666;
 }
 
 /* Button Styling */
 .button {
-  text-align: center;
   margin-top: 20px;
+  text-align: center;
 }
 
 .button a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #4caf50;
+  background: #4caf50;
   color: #fff;
+  border-radius: 8px;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s;
 }
 
 .button a:hover {
-  background-color: #45a049;
+  background: #45a049;
 }
 
-
-/* Container Styling */
-.home-content .sales-boxes {
-  display: flex;
-  justify-content: space-between;
-}
-
-.home-content .sales-boxes .recent-sales {
-  width: 60%;
-}
-
-
-/* Webinar List Styling */
-.sales-boxes .top-sales .webinars-list {
-  list-style: none;
-  padding: 0;
-}
-
-.sales-boxes .top-sales li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10px 0;
-}
-
-.sales-boxes .top-sales li a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.sales-boxes .top-sales li a img {
-  height: 40px;
-  width: 40px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-right: 10px;
-  background: #333;
-}
-
-.sales-boxes .top-sales li .webinar-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.sales-boxes .top-sales li .webinar-theme {
-  font-size: 17px;
-  font-weight: 500;
-  color: #333;
-}
-
-.sales-boxes .top-sales li .program-name {
-  font-size: 14px;
-  font-weight: 400;
-  color: #555;
-}
-
-.sales-boxes .top-sales li .webinar-date-time {
-  font-size: 13px;
-  color: #777;
-}
 
 
 /* Responsive Media Query */
