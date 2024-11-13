@@ -1,4 +1,4 @@
-let sidebar = document.querySelector(".sidebar");
+document.addEventListener("DOMContentLoaded", function () {let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".sidebarBtn");
 sidebarBtn.onclick = function() {
   sidebar.classList.toggle("active");
@@ -73,6 +73,8 @@ function renderRecentCourses() {
     coursesContainer.appendChild(courseCard);
   });
 }
-
+                                                          
 // Initialize the courses display
 document.addEventListener("DOMContentLoaded", renderRecentCourses);
+                                                           
+                                                          });
