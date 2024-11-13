@@ -259,24 +259,37 @@ nav .profile-details i{
   /* padding: 0 20px; */
 }
 
-/* Recently enrolled courses styles */
-.courses-details {
-  margin-top: 20px;
+/* Container Styling */
+.sales-boxes {
+  padding: 20px;
 }
 
+.recent-sales.box {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Course Card Styling */
 .course-card {
-  display: flex;
-  flex-direction: column;
   background: #fff;
+  border-radius: 10px;
   padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
 }
 
 .course-title {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bold;
   color: #333;
   margin-bottom: 5px;
 }
@@ -287,29 +300,50 @@ nav .profile-details i{
   margin-bottom: 10px;
 }
 
+/* Progress Bar Styling */
 .progress-container {
-  display: flex;
-  align-items: center;
-}
-
-.progress-bar {
-  width: 100%;
-  height: 10px;
-  background-color: #e0e0e0;
-  border-radius: 5px;
+  position: relative;
+  background: #e0e0e0;
+  border-radius: 10px;
+  height: 20px;
   overflow: hidden;
 }
 
-.progress-fill {
+.progress-bar {
   height: 100%;
   background-color: #4caf50;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .progress-text {
-  margin-left: 10px;
-  font-size: 14px;
-  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Button Styling */
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button a:hover {
+  background-color: #45a049;
 }
 
 
