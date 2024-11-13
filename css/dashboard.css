@@ -347,19 +347,17 @@ nav .profile-details i{
 }
 
 
-/* left box */
-.home-content .sales-boxes .recent-sales{
-  width: 65%;
-  background: #fff;
-  padding: 20px 30px;
-  margin: 0 20px;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+/* Container Styling */
+.home-content .sales-boxes {
+  display: flex;
+  justify-content: space-between;
 }
 
+.home-content .sales-boxes .recent-sales {
+  width: 60%;
+}
 
-/* Right box */
-.home-content .sales-boxes .top-sales{
+.home-content .sales-boxes .top-sales {
   width: 35%;
   background: #fff;
   padding: 20px 30px;
@@ -367,96 +365,57 @@ nav .profile-details i{
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-/* Container Styling */
-.sales-boxes {
-  padding: 20px;
+
+/* Webinar List Styling */
+.sales-boxes .top-sales .webinars-list {
+  list-style: none;
+  padding: 0;
 }
 
-.recent-sales.box {
-  background: #f5f7fa;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.title {
-  font-size: 22px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Webinar Card Styling */
-.webinar-card {
+.sales-boxes .top-sales li {
   display: flex;
   align-items: center;
-  background: #fff;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 15px;
-  border: 1px solid #e0e0e0;
+  justify-content: space-between;
+  margin: 10px 0;
 }
 
-.webinar-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
-  object-fit: cover;
-  margin-right: 15px;
-}
-
-.webinar-info {
-  flex: 1;
-}
-
-.webinar-theme {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.program-name {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-.webinar-date-time {
-  font-size: 14px;
-  color: #777;
+.sales-boxes .top-sales li a {
   display: flex;
   align-items: center;
-}
-
-.icon-calendar {
-  margin-right: 5px;
-  width: 16px;
-  height: 16px;
-  background: url('https://via.placeholder.com/16') no-repeat center;
-  background-size: contain;
-}
-
-/* Button Styling */
-.button {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.button a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
-.button a:hover {
-  background-color: #0056b3;
+.sales-boxes .top-sales li a img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 10px;
+  background: #333;
 }
+
+.sales-boxes .top-sales li .webinar-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.sales-boxes .top-sales li .webinar-theme {
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+}
+
+.sales-boxes .top-sales li .program-name {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+}
+
+.sales-boxes .top-sales li .webinar-date-time {
+  font-size: 13px;
+  color: #777;
+}
+
 
 /* Responsive Media Query */
 @media (max-width: 1240px) {
