@@ -7,3 +7,10 @@ sidebarBtn.onclick = function() {
 }else
   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const webinarsList = document.querySelector(".webinars-list");
+  if (!webinarsList) {
+    console.error("Webinars list element not found");
+  }
+});
