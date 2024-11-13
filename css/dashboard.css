@@ -258,11 +258,29 @@ nav .profile-details i{
   justify-content: space-between;
   /* padding: 0 20px; */
 }
-
-/* Container Styling */
 .sales-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
   padding: 20px;
 }
+
+.recent-sales {
+  flex: 1;
+  min-width: 60%;
+}
+
+.top-sales {
+  flex: 0 1 35%;
+  max-width: 35%;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container Styling */
 
 .recent-sales.box {
   background: #f9f9f9;
@@ -357,14 +375,6 @@ nav .profile-details i{
   width: 60%;
 }
 
-.home-content .sales-boxes .top-sales {
-  width: 35%;
-  background: #fff;
-  padding: 20px 30px;
-  margin: 0 20px 0 0;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
 
 /* Webinar List Styling */
 .sales-boxes .top-sales .webinars-list {
