@@ -195,7 +195,7 @@ nav .profile-details i{
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 .overview-boxes .box-topic{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 .home-content .box .number{
@@ -246,7 +246,7 @@ nav .profile-details i{
    background: #ffe8b3;
  }
 .home-content .box .cart.four{
-   color: #e05260;
+   color: #5784e6;
    background: #90caf9;
  }
 .home-content .total-order{
