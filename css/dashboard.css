@@ -273,25 +273,7 @@ nav .profile-details i{
   align-items: center;
   justify-content: space-between;
 }
-.sales-boxes .box .title{
-  font-size: 24px;
-  font-weight: 500;
-  /* margin-bottom: 10px; */
-}
-.sales-boxes .sales-details li.topic{
-  font-size: 20px;
-  font-weight: 500;
-}
-.sales-boxes .sales-details li{
-  list-style: none;
-  margin: 8px 0;
-}
-.sales-boxes .sales-details li a{
-  font-size: 18px;
-  color: #333;
-  font-size: 400;
-  text-decoration: none;
-}
+
 .sales-boxes .box .button{
   width: 100%;
   display: flex;
