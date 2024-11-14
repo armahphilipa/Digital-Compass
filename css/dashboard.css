@@ -253,120 +253,98 @@ nav .profile-details i{
   font-size: 20px;
   font-weight: 500;
 }
-/* Parent Container for Both Sections */
-.sales-boxes {
+.home-content .sales-boxes{
   display: flex;
-  gap: 20px;
   justify-content: space-between;
-  padding: 20px;
-  align-items: flex-start;
+  /* padding: 0 20px; */
 }
 
-/* Recent Enrolled Courses Section */
-.recent-sales {
-  flex: 1;
+/* left box */
+.home-content .sales-boxes .recent-sales{
+  width: 65%;
   background: #fff;
-  padding: 20px;
+  padding: 20px 30px;
+  margin: 0 20px;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  max-width: 60%;
 }
-
-.courses-details {
-  margin-top: 20px;
-}
-
-.course-card {
-  background: #f9f9f9;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.progress-container {
+.home-content .sales-boxes .sales-details{
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 10px;
+  justify-content: space-between;
 }
-
-.progress-bar {
-  width: 70%;
-  height: 8px;
-  background: #4caf50;
-  border-radius: 4px;
+.sales-boxes .box .title{
+  font-size: 24px;
+  font-weight: 500;
+  /* margin-bottom: 10px; */
 }
-
-.progress-text {
-  font-size: 12px;
+.sales-boxes .sales-details li.topic{
+  font-size: 20px;
+  font-weight: 500;
 }
-
-/* Recently Enrolled Webinars Section */
-.top-sales {
-  flex: 0 1 35%;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  max-width: 35%;
-}
-
-.webinars-list {
+.sales-boxes .sales-details li{
   list-style: none;
-  padding: 0;
-  margin-top: 20px;
+  margin: 8px 0;
+}
+.sales-boxes .sales-details li a{
+  font-size: 18px;
+  color: #333;
+  font-size: 400;
+  text-decoration: none;
+}
+.sales-boxes .box .button{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.sales-boxes .box .button a{
+  color: #fff;
+  background: #0A2558;
+  padding: 4px 12px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.sales-boxes .box .button a:hover{
+  background:  #0d3073;
 }
 
-.webinars-list li {
+/* Right box */
+.home-content .sales-boxes .top-sales{
+  width: 35%;
+  background: #fff;
+  padding: 20px 30px;
+  margin: 0 20px 0 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.sales-boxes .top-sales li{
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  justify-content: space-between;
+  margin: 10px 0;
 }
-
-.webinars-list img {
-  width: 40px;
+.sales-boxes .top-sales li a img{
   height: 40px;
-  border-radius: 50%;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 12px;
   margin-right: 10px;
+  background: #333;
 }
-
-.webinar-info {
+.sales-boxes .top-sales li a{
   display: flex;
-  flex-direction: column;
-}
-
-.webinar-theme {
-  font-weight: bold;
-}
-
-.program-name,
-.webinar-date-time {
-  font-size: 12px;
-  color: #666;
-}
-
-/* Button Styling */
-.button {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.button a {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #4caf50;
-  color: #fff;
-  border-radius: 8px;
+  align-items: center;
   text-decoration: none;
-  transition: background 0.3s;
 }
-
-.button a:hover {
-  background: #45a049;
+.sales-boxes .top-sales li .product,
+.price{
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
 }
-
-
-
 /* Responsive Media Query */
 @media (max-width: 1240px) {
   .sidebar{
