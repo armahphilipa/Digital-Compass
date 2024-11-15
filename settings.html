@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings Page | Digital Compass</title>
+    <link rel="stylesheet" href="css/settings.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-settings">
+            <h2>Profile Settings</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" value="Digital Compass" />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" value="digitalcompass@example.com" />
+
+                <button type="button" onclick="saveProfile()">Save Profile Settings</button>
+            </form>
+        </section>
+
+        <section class="account-settings">
+            <h2>Account Settings</h2>
+            <form>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter new password" />
+
+                <label for="notifications">Notifications:</label>
+                <select id="notifications">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button type="button" onclick="saveAccount()">Save Account Settings</button>
+            </form>
+        </section>
+
+        <section class="appearance-settings">
+            <h2>Appearance Settings</h2>
+            <form>
+                <label for="theme">Theme:</label>
+                <select id="theme" onchange="changeTheme()">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+
+                <label for="font-size">Font Size:</label>
+                <select id="font-size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+
+                <button type="button" onclick="saveAppearance()">Save Appearance Settings</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="main/script.js"></script>
+</body>
+</html>
