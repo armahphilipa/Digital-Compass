@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/course.css">
+</head>
+<body>
+    <div class="header">
+        <h1>DIGITAL COMPASS</h1>
+    </div>
+
+    <div class="detail">
+        <div class="current-course">
+            <div class="image">
+                <img src="" alt="" width="200px">
+            </div>
+            <div class="content">
+                <h1 class="title"></h1>
+                <div class="description"></div>
+                <div class="instructor"></div>
+                <div class="star-rating"></div>
+            </div>
+        </div>
+        <div class="chapters">
+            <h2>Course Chapters</h2>
+            <div class="chapter-list"></div>
+        </div>
+
+        <div class="similar">
+            <h1 class="similar-prod">Similar Courses</h1>
+            <div class="courseProduct"></div>   
+        </div>
+
+        
+        
+    </div>
+    <footer class="footer">
+        <p>Copyright &copy; Digital Compass 2024</p>
+    </footer>
+
+    <script>
+        let courses=null;
+        fetch('main/course.json')
+        .then(response => response.json())
+        .then(data => {
+            courses=data;
+            // console.log(courses);
+            showDetail();
+            
+        });
+
+        function showDetail() {
+            let detail = document.querySelector('.detail')
+            let productId = new URLSearchParams(window.location.search).get('id')
+            let thisProduct = courses.filter(value =>{
+                return value.id == productId
+            })[0];
+
+            if (!thisProduct) {
+                window.location.href = '/';
+            }
+
+            detail.querySelector('.image img').src = thisProduct.image;
+            detail.querySelector('.title').innerText = thisProduct.title;
+            detail.querySelector('.description').innerText = thisProduct.description;
+            detail.querySelector('.instructor').innerText = `Instructor: ${thisProduct.instructor}`;
+
+            detail.querySelector('.star-rating').innerHTML = `${'★'.repeat(Math.floor(thisProduct.rating))}${'☆'.repeat(5 - Math.floor(thisProduct.rating))} <span>(${thisProduct.rating.toFixed(1)})</span>`;
+
+            const chapterList = detail.querySelector('.chapter-list');
+            chapterList.innerHTML = ''; 
+
+            thisProduct.chapters.forEach(chapter => {
+                let chapterElement = document.createElement('a');
+                chapterElement.href = '/#course_chaper/' + chapter.id
+                chapterElement.classList.add('chapter');
+                chapterElement.innerHTML = `
+                    <h3>${chapter.title}</h3>
+                    <p>${chapter.content}</p>
+                `;
+                chapterList.appendChild(chapterElement);
+            });
+
+            
+            let courseProduct = document.querySelector(".courseProduct");
+            (courses.filter(value => value.id != productId)).forEach(course => {
+                    let newCourse = document.createElement("a")
+                    newCourse.href = '/course_detail.html?id=' + course.id;
+                    newCourse.classList.add("item");
+                    newCourse.innerHTML = `
+                        <img src="${course.image}" alt="${course.title}">
+                        
+                        <div class="course-card-body">
+                            <h2>${course.title}</h2>
+                            <p>${course.description}</p>
+                            <p class="instructor">Instructor: ${course.instructor}</p>
+                            <div class="star-rating">
+                                ${'★'.repeat(Math.floor(course.rating))}${'☆'.repeat(5 - Math.floor(course.rating))} <span>(${course.rating.toFixed(1)})</span>
+                            </div>
+                            <a href="/course-detail.html?id=${course.id}" class="course-view">View course</a>
+                        </div>
+
+                    `;
+        
+                courseProduct.appendChild(newCourse);
+            });
+        }
+            
+
+
+        
+    </script>
+</body>
+</html>
