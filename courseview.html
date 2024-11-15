@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Admin Dashboard | CodingLab</title>
+    <link rel="stylesheet" href="css/view.css" />
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bxl-c-plus-plus"></i>
+        <span class="logo_name">CodingLab</span>
+      </div>
+      <ul class="nav-links">
+        <!-- Sidebar links here -->
+      </ul>
+    </div>
+    <section class="home-section">
+      <nav>
+        <div class="sidebar-button">
+          <i class="bx bx-menu sidebarBtn"></i>
+          <span class="dashboard">Dashboard</span>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search..." />
+          <i class="bx bx-search"></i>
+        </div>
+        <div class="profile-details">
+          <img src="images/profile.jpg" alt="" />
+          <span class="admin_name">Team Titans</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </nav>
+
+      <div class="home-content">
+        <!-- Embedded YouTube video -->
+        <div class="video-section">
+          <h2>Course Introduction Video</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jwCmIBJ8Jtc?si=l0TktS0TkTCHSC47" 
+                  title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+        </div>
+
+        <!-- Course Information -->
+        <div class="course-info">
+          <h3>Course Overview: How to Make Wireframe in Figma</h3>
+          <p>
+            This course guides you through the essentials of wireframing in Figma, perfect for beginners and
+            experienced designers alike. Learn best practices, key techniques, and explore real-world examples to
+            create wireframes that enhance the design process.
+          </p>
+        </div>
+
+        <!-- Sales Boxes or other content -->
+        <div class="sales-boxes">
+          <div class="recent-sales box">
+            <div class="title">Recent Activity</div>
+            <div class="course-progress">
+      <h2>Course Progress</h2>
+      
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <div class="progress-bar" style="width: 60%;"> <!-- Change width based on progress -->
+          <span>60% Complete</span>
+        </div>
+      </div>
+
+      <!-- Courses List -->
+      <div class="courses-list">
+        <h3>Courses</h3>
+        <ul>
+          <li class="completed">Introduction to Figma <span class="status">Completed</span></li>
+          <li class="completed">Creating Simple Wireframes <span class="status">Completed</span></li>
+          <li class="uncompleted">Advanced Wireframing Techniques <span class="status">Not Completed</span></li>
+          <li class="uncompleted">Designing Prototypes in Figma <span class="status">Not Completed</span></li>
+          <li class="uncompleted">Figma for UX/UI Designers <span class="status">Not Completed</span></li>
+        </ul>
+      </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".sidebarBtn");
+      sidebarBtn.onclick = function () {
+        sidebar.classList.toggle("active");
+        if (sidebar.classList.contains("active")) {
+          sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+      };
+    </script>
+  </body>
+</html>
