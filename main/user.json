@@ -1,0 +1,72 @@
+[
+    {
+        "name":"Emma Tommy",
+        "profile_img": "images/profile_img.jpg",
+        "learning_hours": 15,
+        "points": 230
+
+    },
+    {
+        "name":"Jane Wilson",
+        "profile_img": "images/profile_img.jpg",
+        "learning_hours": 95,
+        "points": 3050
+
+    },
+    {
+        "name":"John Doe",
+        "profile_img": "images/profile_img.jpg",
+        "learning_hours": 84,
+        "points": 5600
+
+    },
+    {
+        "name":"Grey Smith",
+        "profile_img": "images/profile_img.jpg",
+        "learning_hours": 59,
+        "points": 1050
+
+    },
+    {
+        "name":"Nyla Harper",
+        "profile_img": "images/profile_img.jpg",
+        "learning_hours": 15,
+        "points": 230
+
+    },
+    {
+        "name":"Aliya Rain",
+        "profile_img": "images/profile_img.jpg",
+        "learning_hours": 75,
+        "points": 4530
+
+    },
+    {
+        "name":"Tim Walter",
+        "profile_img": "images/profile_img.jpg",
+        "learning_hours": 15,
+        "points": 2300
+
+    },
+    {
+        "name":"Thomas Edison",
+        "profile_img": "images/profile_img.jpg",
+        "learning_hours": 10,
+        "points": 1500
+
+    },
+    {
+        "name":"Emmily Stone",
+        "profile_img": "images/profile_img.jpg",
+        "learning_hours": 35,
+        "points": 5000
+
+    },
+    {
+        "name":"Taylor swift",
+        "profile_img": "images/profile_img.jpg",
+        "learning_hours": 20,
+        "points": 230
+
+    }
+]
