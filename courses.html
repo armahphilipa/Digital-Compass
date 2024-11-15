@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Catalog</title>
+    <link rel="stylesheet" href="css/course.css">
+  
+
+</head>
+<body>
+    <div class="header">
+        <h1>DIGITAL COMPASS</h1>
+        <input type="text" id="searchInput" placeholder="Search courses..." oninput="filterCourses()">
+    </div>
+    
+    <div class="container-card">
+        <div class="courseProduct"></div>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright &copy; Digital Compass 2024</p>
+    </footer>
+
+
+    <script>
+        // Get data from course.json
+        let courses=null;
+        fetch('main/course.json')
+        .then(response => response.json())
+        .then(data => {
+            courses=data;
+            console.log(courses);
+            addDataToHTML();
+            
+        });
+
+
+        let courseProduct = document.querySelector(".courseProduct");
+        function addDataToHTML(coursesToDisplay = courses) {
+        // Clear the container before adding new courses
+        courseProduct.innerHTML = "";
+
+        coursesToDisplay.forEach(course => {
+        let newCourse = document.createElement("a");
+        newCourse.href = '/course_detail.html?id=' + course.id;
+        newCourse.classList.add("item");
+        newCourse.innerHTML = `
+        <img src="${course.image}" alt="${course.title}">
+        <div class="course-card-body">
+            <h2>${course.title}</h2>
+            <p>${course.description}</p>
+            <p class="instructor">Instructor: ${course.instructor}</p>
+            <div class="star-rating">
+              ${'★'.repeat(Math.floor(course.rating))}${'☆'.repeat(5 - Math.floor(course.rating))} <span>(${course.rating.toFixed(1)})</span>
+          </div>
+            <a href="/course-detail.html?id=${course.id}" class="course-view">View course</a>
+        </div>
+        `;
+
+        courseProduct.appendChild(newCourse);
+        });
+        }
+
+        // Filter courses based on search input
+        function filterCourses() {
+        const searchInput = document.getElementById('searchInput').value.toLowerCase();
+        const filteredCourses = courses.filter(course => 
+        course.title.toLowerCase().includes(searchInput) || 
+        course.description.toLowerCase().includes(searchInput) ||
+        course.instructor.toLowerCase().includes(searchInput)
+        );
+        addDataToHTML(filteredCourses);
+        }
+
+    </script>
+</body>
+</html>
