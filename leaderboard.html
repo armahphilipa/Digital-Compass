@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="css/leaderboard.css">
+</head>
+<body>
+  <div class="header">
+    <h1>DIGITAL COMPASS</h1>
+  </div>
+  
+  <!-- Sidebar Navigation -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Leaderboard</a>
+    <a href="#">Courses</a>
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer;color:var(--purple-dark);" onclick="openNav()">&#9776;</span>
+    <div class="leaderboard-container">
+      <h1>Leaderboard</h1>
+      <div class="search-filter">
+        <input type="text" id="search" placeholder="Search by name...">
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="hours">Top Hours</option>
+          <option value="points">Top Points</option>
+        </select> 
+      </div>
+      <div class="leaderboard-list" id="leaderboard-list">
+        <!-- Dynamic leaderboard items will appear here -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Copyright &copy; Digital Compass 2024</p>
+  </footer>
+
+  <script src="main/leaderboard.js"></script>
+</body>
+</html>
