@@ -1,0 +1,231 @@
+
+
+
+[
+    { 
+      "id": 1,
+      "title": "Introduction to Python", 
+      "image": "images/image1.jpg", 
+      "description": "Start your programming journey with Python, a versatile and beginner-friendly language used in web development, data science, automation, and more.", 
+      "instructor": "John Doe", 
+      "rating": 4.5,
+      "chapters": [
+        {
+            "id": "ch1",
+            "title": "Chapter 1: Introduction",
+            "content": "This is the introduction to the course."
+        },
+        {
+            "id": "ch2",
+            "title": "Chapter 2: Basics",
+            "content": "This chapter covers the basics."
+        },
+        {
+            "id": "ch3",
+            "title": "Chapter 3: Advanced Topics",
+            "content": "This chapter covers advanced topics."
+        }
+    ]
+    },
+    { 
+      "id": 2,
+      "title": "Data Analytics with R", 
+      "image": "images/image11.jpg", 
+      "description": "Explore data analytics with R, a powerful language for statistical analysis, to clean, analyze, and visualize data for impactful decision-making.", 
+      "instructor": "Jane Smith", 
+      "rating": 4.7,
+      "chapters": [
+        {
+            "id": "ch1",
+            "title": "Chapter 1: Introduction",
+            "content": "This is the introduction to the course."
+        },
+        {
+            "id": "ch2",
+            "title": "Chapter 2: Basics",
+            "content": "This chapter covers the basics."
+        },
+        {
+            "id": "ch3",
+            "title": "Chapter 3: Advanced Topics",
+            "content": "This chapter covers advanced topics."
+        }
+    ]
+    },
+    {
+       "id": 3, 
+      "title": "UI/UX Design", 
+      "image": "images/image6.jpg", 
+      "description": "Explore the principles of UI/UX design and learn how to create user-centered interfaces that are both aesthetically pleasing and functional.", 
+      "instructor": "Emma Bradford", 
+      "rating": 4.7,
+      "chapters": [
+        {
+            "id": "ch1",
+            "title": "Chapter 1: Introduction",
+            "content": "This is the introduction to the course."
+        },
+        {
+            "id": "ch2",
+            "title": "Chapter 2: Basics",
+            "content": "This chapter covers the basics."
+        },
+        {
+            "id": "ch3",
+            "title": "Chapter 3: Advanced Topics",
+            "content": "This chapter covers advanced topics."
+        }
+    ]
+    },
+    { 
+      "id": 4,
+      "title": "Web Development with Django", 
+      "image": "images/image4.jpg", 
+      "description": "Master web development using Django, a popular Python framework, to build secure, scalable, and dynamic websites with ease.", 
+      "instructor": "Lucy Chen", 
+      "rating": 4.7,
+      "chapters": [
+        {
+            "id": "ch1",
+            "title": "Chapter 1: Introduction",
+            "content": "This is the introduction to the course."
+        },
+        {
+            "id": "ch2",
+            "title": "Chapter 2: Basics",
+            "content": "This chapter covers the basics."
+        },
+        {
+            "id": "ch3",
+            "title": "Chapter 3: Advanced Topics",
+            "content": "This chapter covers advanced topics."
+        }
+    ]
+    },
+    { 
+      "id": 5,
+      "title": "Front-End Development", 
+      "image": "images/image10.jpg", 
+      "description": "Learn the essentials of frontend development and build engaging, responsive websites using HTML, CSS, and JavaScript.", 
+      "instructor": "Chris Brown", 
+      "rating": 4.3,
+      "chapters": [
+        {
+            "id": "ch1",
+            "title": "Chapter 1: Introduction",
+            "content": "This is the introduction to the course."
+        },
+        {
+            "id": "ch2",
+            "title": "Chapter 2: Basics",
+            "content": "This chapter covers the basics."
+        },
+        {
+            "id": "ch3",
+            "title": "Chapter 3: Advanced Topics",
+            "content": "This chapter covers advanced topics."
+        }
+    ]
+    },
+    { 
+      "id": 6,
+      "title": "Machine Learning Essentials", 
+      "image": "images/image7.jpg", 
+      "description": "Discover the transformative power of Machine Learning, where you'll learn to build algorithms that enable systems to learn from data, make predictions, and drive intelligent decision-making in real-world applications.", 
+      "instructor": "Anna Johnson", 
+      "rating": 3.8,
+      "chapters": [
+        {
+            "id": "ch1",
+            "title": "Chapter 1: Introduction",
+            "content": "This is the introduction to the course."
+        },
+        {
+            "id": "ch2",
+            "title": "Chapter 2: Basics",
+            "content": "This chapter covers the basics."
+        },
+        {
+            "id": "ch3",
+            "title": "Chapter 3: Advanced Topics",
+            "content": "This chapter covers advanced topics."
+        }
+    ]
+    },
+    { 
+      "id": 7,
+      "title": "Data Science Fundamentals", 
+      "image": "images/image7.jpg", 
+      "description": "Dive into the world of Data Science and learn how to extract insights from complex data, leveraging tools and techniques to solve real-world problems.", 
+      "instructor": "Mark Lee", 
+      "rating": 4.6,
+      "chapters": [
+        {
+            "id": "ch1",
+            "title": "Chapter 1: Introduction",
+            "content": "This is the introduction to the course."
+        },
+        {
+            "id": "ch2",
+            "title": "Chapter 2: Basics",
+            "content": "This chapter covers the basics."
+        },
+        {
+            "id": "ch3",
+            "title": "Chapter 3: Advanced Topics",
+            "content": "This chapter covers advanced topics."
+        }
+      ]
+    },
+    { 
+      "id": 8,
+      "title": "Cybersecurity", 
+      "image": "images/image5.jpg", 
+      "description": "Equip yourself with essential cybersecurity skills to protect digital assets and secure systems from potential threats and vulnerabilities.", 
+      "instructor": "Aaron John", 
+      "rating": 4.6,
+      "chapters": [
+        {
+            "id": "ch1",
+            "title": "Chapter 1: Introduction",
+            "content": "This is the introduction to the course."
+        },
+        {
+            "id": "ch2",
+            "title": "Chapter 2: Basics",
+            "content": "This chapter covers the basics."
+        },
+        {
+            "id": "ch3",
+            "title": "Chapter 3: Advanced Topics",
+            "content": "This chapter covers advanced topics."
+        }
+      ]
+    },
+    { 
+      "id": 9,
+      "title": "Microsoft Excel", 
+      "image": "images/image5.jpg", 
+      "description": "Unlock the full potential of Microsoft Excel and become proficient in data organization, analysis, and visualization for business and personal use.", 
+      "instructor": "Aaron John", 
+      "rating": 4.6,
+      "chapters": [
+        {
+            "id": "ch1",
+            "title": "Chapter 1: Introduction",
+            "content": "This is the introduction to the course."
+        },
+        {
+            "id": "ch2",
+            "title": "Chapter 2: Basics",
+            "content": "This chapter covers the basics."
+        },
+        {
+            "id": "ch3",
+            "title": "Chapter 3: Advanced Topics",
+            "content": "This chapter covers advanced topics."
+        }
+      ]
+    }
+]
+    
